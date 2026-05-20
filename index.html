@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6B9AB8">
+  <title>RASCON Construction — Stavíme na důvěře. Retail, kanceláře, rezidence.</title>
+  <meta name="description" content="Stavební společnost specializovaná na výstavbu retail jednotek, kanceláří a rezidenčních projektů. Partneři značek Swarovski, Intersport, Hervis, Hamleys. Praha, Česká republika.">
+  <meta name="keywords" content="stavební firma Praha, retail výstavba, fit-out, demolice, kanceláře, Swarovski, Intersport, Hervis, Hamleys, Rascon Construction">
+  <meta property="og:title" content="RASCON Construction — Stavíme na důvěře">
+  <meta property="og:description" content="Retail, kanceláře, rezidence. 80+ projektů, 17+ let zkušeností. Praha, CZ/SK/HU.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:url" content="https://www.rascon.cz/">
+
+  <!-- Schema.org JSON-LD - LocalBusiness / GeneralContractor -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "Rascon construction s.r.o.",
+    "alternateName": "RASCON Construction",
+    "description": "Stavební společnost specializovaná na výstavbu retail jednotek, kanceláří a rezidenčních projektů v České republice, na Slovensku a v Maďarsku.",
+    "url": "https://www.rascon.cz/",
+    "telephone": "+420739316574",
+    "email": "info@rascon.cz",
+    "foundingDate": "2022-02-22",
+    "vatID": "CZ14280299",
+    "taxID": "14280299",
+    "legalName": "Rascon construction s.r.o.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hlučkova 813/12",
+      "addressLocality": "Praha 9 - Letňany",
+      "postalCode": "19900",
+      "addressCountry": "CZ"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "50.1328",
+      "longitude": "14.5188"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:00",
+      "closes": "17:00"
+    },
+    "areaServed": [
+      { "@type": "Country", "name": "Czech Republic" },
+      { "@type": "Country", "name": "Slovakia" },
+      { "@type": "Country", "name": "Hungary" }
+    ],
+    "knowsAbout": ["Retail construction", "Commercial fit-out", "Demolition", "Office refurbishment", "Residential construction"],
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61579614524490",
+      "https://www.linkedin.com/company/rascon-construction/",
+      "https://www.instagram.com/rascon_construction/"
+    ]
+  }
+  </script>
+
+  <link rel="icon" type="image/jpeg" href="img/favicon.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================
+       NAVIGATION
+       ===================================================== -->
+  <nav class="site-nav" id="site-nav" role="navigation" aria-label="Hlavní navigace">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand" aria-label="Rascon Construction — domů">
+        <img src="img/logo.png" alt="Rascon Construction">
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#about" data-i18n="nav.about">O nás</a></li>
+        <li><a href="#services" data-i18n="nav.services">Naše služby</a></li>
+        <li><a href="#process" data-i18n="nav.process">Proces</a></li>
+        <li><a href="#clients" data-i18n="nav.clients">Reference</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="nav-cta" data-i18n="nav.cta">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 2.5a1 1 0 0 1 1-1h2l1 3-1.5 1a8 8 0 0 0 4 4l1-1.5 3 1v2a1 1 0 0 1-1 1A11 11 0 0 1 3 2.5z"/></svg>
+          <span data-i18n="nav.cta">Kontaktujte nás</span>
+        </a>
+      </div>
+
+      <div class="lang-switcher">
+        <button class="lang-globe" id="lang-toggle" type="button" aria-label="Jazyk">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <span id="lang-current">CS</span>
+        </button>
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button type="button" data-lang="cs" class="is-active">Čeština</button>
+          <button type="button" data-lang="en">English</button>
+        </div>
+      </div>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Otevřít menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" data-i18n="nav.about">O nás</a>
+    <a href="#services" data-i18n="nav.services">Naše služby</a>
+    <a href="#process" data-i18n="nav.process">Proces</a>
+    <a href="#clients" data-i18n="nav.clients">Reference</a>
+    <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+    <div class="mobile-menu-lang">
+      <button type="button" data-lang="cs" class="is-active">CS</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </div>
+
+  <main>
+
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
+  <section class="hero" id="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span id="hero-prefix">Stavíme na</span><br><span class="rotating-word" id="rotating-word">důvěře</span>
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Kompletní realizace komerčních interiérů na klíč.</p>
+        <div class="hero-categories">
+          <span class="hero-category" data-i18n="hero.cat1">Retail</span>
+          <span class="hero-category" data-i18n="hero.cat3">Kanceláře</span>
+          <span class="hero-category" data-i18n="hero.cat4">Rezidence</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <!-- =============================================
+             PROFESSIONAL FLOOR PLAN — Intersport-inspired
+             ============================================= -->
+        <svg viewBox="0 0 640 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Profesionální půdorys retail jednotky">
+
+          <!-- Outer border frame -->
+          <rect x="8" y="8" width="624" height="444" fill="none" stroke="var(--accent)" stroke-width="0.6" opacity="0.4"/>
+          <rect x="14" y="14" width="612" height="432" fill="none" stroke="var(--accent)" stroke-width="0.4" opacity="0.3"/>
+
+          <!-- Title bar top -->
+          <text class="fp-stamp-text-lg fp-fade fp-fade-3" x="320" y="32" text-anchor="middle">
+            D.1.1 ARCHITEKTONICKO-STAVEBNÍ ČÁST
+          </text>
+          <line x1="30" y1="40" x2="610" y2="40" stroke="var(--accent)" stroke-width="0.5" opacity="0.5" class="fp-fade fp-fade-3"/>
+
+          <!-- Top dimension line -->
+          <g class="fp-fade fp-fade-4">
+            <line class="fp-dimension" x1="70" y1="62" x2="500" y2="62"/>
+            <line class="fp-dimension" x1="70" y1="58" x2="70" y2="68"/>
+            <line class="fp-dimension" x1="500" y1="58" x2="500" y2="68"/>
+            <rect x="268" y="54" width="42" height="12" fill="var(--bg)"/>
+            <text class="fp-dimension-text" x="285" y="63" text-anchor="middle">24.0 m</text>
+          </g>
+
+          <!-- Right dimension line -->
+          <g class="fp-fade fp-fade-5">
+            <line class="fp-dimension" x1="518" y1="78" x2="518" y2="360"/>
+            <line class="fp-dimension" x1="514" y1="78" x2="522" y2="78"/>
+            <line class="fp-dimension" x1="514" y1="360" x2="522" y2="360"/>
+            <rect x="508" y="213" width="22" height="12" fill="var(--bg)"/>
+            <text class="fp-dimension-text" x="519" y="221" text-anchor="middle" transform="rotate(-90 519 221)">15.8 m</text>
+          </g>
+
+          <!-- ZONE FILLS (rendered first, behind walls) -->
+          <!-- Sales floor main -->
+          <rect class="fp-fill fp-fade fp-fade-1" x="70" y="78" width="430" height="192"/>
+          <!-- Fitting rooms corridor -->
+          <rect class="fp-fill-accent fp-fade fp-fade-2" x="70" y="160" width="72" height="110"/>
+          <!-- Stock + back of house -->
+          <rect class="fp-fill fp-fade fp-fade-1" x="70" y="270" width="430" height="90"/>
+          <!-- Cash counter zone accent -->
+          <rect class="fp-fill-accent fp-fade fp-fade-2" x="340" y="190" width="150" height="45"/>
+
+          <!-- OUTER WALLS -->
+          <!-- Top wall -->
+          <path class="fp-wall fp-draw fp-draw-1" d="M70 78 L500 78"/>
+          <!-- Right wall -->
+          <path class="fp-wall fp-draw fp-draw-1" d="M500 78 L500 360"/>
+          <!-- Bottom wall (entry gap 230-270) -->
+          <path class="fp-wall fp-draw fp-draw-2" d="M70 360 L230 360 M270 360 L500 360"/>
+          <!-- Left wall -->
+          <path class="fp-wall fp-draw fp-draw-2" d="M70 360 L70 78"/>
+
+          <!-- INNER WALLS -->
+          <!-- Horizontal: sales floor / back of house -->
+          <path class="fp-wall-inner fp-draw fp-draw-3" d="M70 270 L200 270 M220 270 L340 270 M360 270 L500 270"/>
+          <!-- Vertical between stock rooms -->
+          <path class="fp-wall-inner fp-draw fp-draw-3" d="M260 270 L260 360"/>
+          <!-- Vertical: kitchen/changing/office/WC block -->
+          <path class="fp-wall-inner fp-draw fp-draw-4" d="M340 270 L340 360"/>
+          <path class="fp-wall-inner fp-draw fp-draw-4" d="M395 270 L395 360"/>
+          <path class="fp-wall-inner fp-draw fp-draw-4" d="M440 270 L440 360"/>
+          <path class="fp-wall-inner fp-draw fp-draw-4" d="M395 315 L440 315"/>
+
+          <!-- Fitting rooms -->
+          <path class="fp-wall-inner fp-draw fp-draw-4" d="M142 160 L142 270"/>
+          <path class="fp-wall-inner fp-draw fp-draw-4" d="M70 190 L130 190 M70 220 L130 220 M70 250 L130 250"/>
+          <!-- Fitting room door arcs -->
+          <path class="fp-door-arc fp-fade fp-fade-3" d="M130 175 A 15 15 0 0 1 142 188"/>
+          <path class="fp-door-arc fp-fade fp-fade-3" d="M130 205 A 15 15 0 0 1 142 218"/>
+          <path class="fp-door-arc fp-fade fp-fade-3" d="M130 235 A 15 15 0 0 1 142 248"/>
+
+          <!-- Cash counter (L-shape) -->
+          <path class="fp-wall-inner fp-draw fp-draw-4" d="M340 195 L480 195 L480 230 L340 230 Z"/>
+          <line class="fp-detail fp-fade fp-fade-4" x1="395" y1="195" x2="395" y2="230"/>
+          <line class="fp-detail fp-fade fp-fade-4" x1="440" y1="195" x2="440" y2="230"/>
+
+          <!-- Door arcs at entry -->
+          <path class="fp-door-arc fp-fade fp-fade-4" d="M230 360 A 38 38 0 0 1 268 360"/>
+          <line class="fp-door fp-fade fp-fade-4" x1="230" y1="360" x2="230" y2="322"/>
+          <line class="fp-door fp-fade fp-fade-4" x1="270" y1="360" x2="270" y2="322"/>
+
+          <!-- Door: sales → stock -->
+          <path class="fp-door-arc fp-fade fp-fade-4" d="M200 270 A 20 20 0 0 1 220 290"/>
+          <!-- Door: stock → WC -->
+          <path class="fp-door-arc fp-fade fp-fade-4" d="M340 270 A 18 18 0 0 1 358 288"/>
+
+          <!-- Hatching for walls (material indication) -->
+          <g class="fp-fade fp-fade-5">
+            <line class="fp-hatch" x1="70" y1="78" x2="76" y2="84"/>
+            <line class="fp-hatch" x1="76" y1="78" x2="82" y2="84"/>
+            <line class="fp-hatch" x1="82" y1="78" x2="88" y2="84"/>
+            <line class="fp-hatch" x1="494" y1="78" x2="500" y2="84"/>
+            <line class="fp-hatch" x1="488" y1="78" x2="494" y2="84"/>
+          </g>
+
+          <!-- Column indicators (structural) -->
+          <g class="fp-fade fp-fade-5">
+            <rect x="200" y="215" width="8" height="8" fill="none" stroke="var(--text)" stroke-width="0.8"/>
+            <rect x="305" y="215" width="8" height="8" fill="none" stroke="var(--text)" stroke-width="0.8"/>
+          </g>
+
+          <!-- ROOM LABELS with numbers and areas (Intersport style: 1.01, 1.02...) -->
+          <g class="fp-fade fp-fade-5">
+            <!-- 1.01 Sales floor -->
+            <text class="fp-room-number" x="255" y="172" text-anchor="middle">1.01</text>
+            <text class="fp-room-label" x="255" y="182" text-anchor="middle">SALES FLOOR</text>
+            <text class="fp-room-area" x="255" y="190" text-anchor="middle">188.4 m²</text>
+
+            <!-- 1.02 Fitting rooms -->
+            <text class="fp-room-number" x="106" y="207" text-anchor="middle">1.02</text>
+            <text class="fp-room-label" x="106" y="216" text-anchor="middle">FITTING</text>
+            <text class="fp-room-area" x="106" y="224" text-anchor="middle">14.8 m²</text>
+
+            <!-- 1.03 Cash -->
+            <text class="fp-room-number" x="410" y="213" text-anchor="middle">1.03</text>
+            <text class="fp-room-label" x="410" y="222" text-anchor="middle">CASH</text>
+
+            <!-- 1.04 Stock -->
+            <text class="fp-room-number" x="135" y="313" text-anchor="middle">1.04</text>
+            <text class="fp-room-label" x="135" y="322" text-anchor="middle">STOCK</text>
+            <text class="fp-room-area" x="135" y="330" text-anchor="middle">62.3 m²</text>
+
+            <!-- 1.05 Kitchen -->
+            <text class="fp-room-number" x="300" y="313" text-anchor="middle">1.05</text>
+            <text class="fp-room-label" x="300" y="322" text-anchor="middle">KITCHEN</text>
+            <text class="fp-room-area" x="300" y="330" text-anchor="middle">12.6 m²</text>
+
+            <!-- 1.06 Office -->
+            <text class="fp-room-number" x="367" y="318" text-anchor="middle">1.06</text>
+            <text class="fp-room-label" x="367" y="326" text-anchor="middle">OFFICE</text>
+
+            <!-- 1.07 WC M -->
+            <text class="fp-room-number" x="417" y="295" text-anchor="middle">1.07</text>
+            <text class="fp-room-label" x="417" y="303" text-anchor="middle">WC M</text>
+
+            <!-- 1.08 WC W -->
+            <text class="fp-room-number" x="417" y="338" text-anchor="middle">1.08</text>
+            <text class="fp-room-label" x="417" y="346" text-anchor="middle">WC W</text>
+
+            <!-- 1.09 Technical -->
+            <text class="fp-room-number" x="469" y="313" text-anchor="middle">1.09</text>
+            <text class="fp-room-label" x="469" y="322" text-anchor="middle">TECH</text>
+
+            <!-- Entry marker -->
+            <text class="fp-room-label" x="250" y="380" text-anchor="middle" style="fill: var(--accent);">▼ ENTRY / PASÁŽ</text>
+          </g>
+
+          <!-- LEGEND BOX bottom-left -->
+          <g class="fp-fade fp-fade-5">
+            <rect class="fp-legend-box" x="30" y="395" width="230" height="50"/>
+            <text class="fp-stamp-text" x="40" y="408" style="font-weight: 600;">LEGENDA MATERIÁLŮ</text>
+            <line x1="40" y1="413" x2="115" y2="413" stroke="var(--accent)" stroke-width="0.4"/>
+
+            <line x1="42" y1="422" x2="58" y2="422" stroke="var(--text)" stroke-width="2"/>
+            <text class="fp-stamp-text" x="62" y="425">SDK PŘÍČKA 100mm</text>
+
+            <line x1="42" y1="433" x2="58" y2="433" stroke="var(--text)" stroke-width="1.2"/>
+            <text class="fp-stamp-text" x="62" y="436">LAMINO PŘÍČKA 50mm</text>
+          </g>
+
+          <!-- PROJECT STAMP bottom-right (razítko) -->
+          <g class="fp-fade fp-fade-5">
+            <rect class="fp-stamp-box" x="340" y="395" width="270" height="50"/>
+            <line x1="340" y1="408" x2="610" y2="408" stroke="var(--accent)" stroke-width="0.4"/>
+            <line x1="340" y1="421" x2="610" y2="421" stroke="var(--accent)" stroke-width="0.4"/>
+            <line x1="340" y1="434" x2="610" y2="434" stroke="var(--accent)" stroke-width="0.4"/>
+            <line x1="460" y1="395" x2="460" y2="445" stroke="var(--accent)" stroke-width="0.4"/>
+            <line x1="540" y1="395" x2="540" y2="445" stroke="var(--accent)" stroke-width="0.4"/>
+
+            <text class="fp-stamp-text" x="346" y="404">INVESTOR</text>
+            <text class="fp-stamp-text" x="346" y="417" style="fill: var(--text);">RASCON CONSTRUCTION</text>
+            <text class="fp-stamp-text" x="346" y="430">AKCE</text>
+            <text class="fp-stamp-text" x="346" y="443" style="fill: var(--text);">RETAIL UNIT · 2026</text>
+
+            <text class="fp-stamp-text" x="466" y="404">MĚŘÍTKO</text>
+            <text class="fp-stamp-text" x="466" y="417" style="fill: var(--text);">1:100</text>
+            <text class="fp-stamp-text" x="466" y="430">FORMÁT</text>
+            <text class="fp-stamp-text" x="466" y="443" style="fill: var(--text);">A3</text>
+
+            <text class="fp-stamp-text" x="546" y="404">ČÍSLO VÝKRESU</text>
+            <text class="fp-stamp-text" x="546" y="417" style="fill: var(--text);">D.1.1-03</text>
+            <text class="fp-stamp-text" x="546" y="430">REVIZE</text>
+            <text class="fp-stamp-text" x="546" y="443" style="fill: var(--text);">00</text>
+          </g>
+
+          <!-- North indicator -->
+          <g class="fp-fade fp-fade-5" transform="translate(566, 88)">
+            <circle cx="0" cy="0" r="11" fill="none" stroke="var(--accent)" stroke-width="0.7"/>
+            <path d="M0 -8 L0 8 M-3 -4 L0 -8 L3 -4" stroke="var(--accent)" stroke-width="0.9" fill="none"/>
+            <text class="fp-stamp-text" x="0" y="-14" text-anchor="middle">N</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       STATS STRIP
+       ===================================================== -->
+  <div class="stats-strip" id="stats">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-number"><span data-count-to="80">0</span><em>+</em></div>
+        <div class="stat-label" data-i18n="stats.projects">Dokončených projektů</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <div class="stat-number"><span data-count-to="17">0</span><em data-i18n="stats.yearsUnit">+ let</em></div>
+        <div class="stat-label" data-i18n="stats.experience">Zkušeností týmu</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <div class="stat-number">CZ·SK·HU</div>
+        <div class="stat-label" data-i18n="stats.markets">Tři trhy. Jeden tým.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       ABOUT — O nás (centered layout)
+       ===================================================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-centered">
+        <p class="eyebrow reveal" data-i18n="about.eyebrow">O nás</p>
+        <h2 class="section-heading reveal" data-i18n-html="about.heading">Mladá firma.<br><em>Zkušený</em> tým.</h2>
+        <p class="about-lead reveal reveal-delay-1" data-i18n-html="about.p1">
+          Rascon Construction je na trhu od roku 2022. Lidé za ním mají <strong>17+ let zkušeností</strong> z českého, slovenského i maďarského stavebního trhu. Díky tomu zvládáme řídit projekty pro značky, které kladou na kvalitu a termín stejný důraz jako na cenu.
+        </p>
+        <p class="about-lead reveal reveal-delay-2" data-i18n-html="about.p2">
+          Řídíme celou stavbu. Vy mluvíte s jedním člověkem, my koordinujeme všechny profese — od SDK přes elektro až po zakázkový nábytek a branding. <strong>Známe fit-out manuály obchodních center</strong> a umíme koordinovat noční směny i práce za plného provozu.
+        </p>
+        <div class="about-badges reveal reveal-delay-3">
+          <span class="about-badge">CZ / SK / HU</span>
+          <span class="about-badge" data-i18n="about.badge2">Od 2022</span>
+          <span class="about-badge" data-i18n="about.badge3">Praha</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       SERVICES — Naše služby
+       ===================================================== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-header reveal">
+        <p class="eyebrow" data-i18n="services.eyebrow">Co děláme</p>
+        <h2 class="section-heading" data-i18n-html="services.heading">Naše <em>služby</em>.</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <span class="service-index">01</span>
+          <h3 data-i18n="services.s1Title">Retail</h3>
+          <p data-i18n="services.s1Desc">Stavíme a bouráme prodejny v obchodních centrech i na high street. Zvládáme práce za plného provozu centra, noční směny a koordinaci s facility managementem. Kompletní fit-out od převzetí prostoru po předání klíčů — včetně strukturálních zásahů, na které běžné firmy nemají kapacity.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-1">
+          <span class="service-index">02</span>
+          <h3 data-i18n="services.s3Title">Kanceláře</h3>
+          <p data-i18n="services.s3Desc">Přestavby komerčních prostor na míru — open space, jednací místnosti, recepce, zázemí pro zaměstnance. Řešíme dispozice, akustiku, osvětlení i klimatizaci tak, aby prostor fungoval od prvního dne.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+          <span class="service-index">03</span>
+          <h3 data-i18n="services.s4Title">Rezidence</h3>
+          <p data-i18n="services.s4Desc">Kompletní vnitřní práce pro bytové domy a rezidenční projekty. Spolupracujeme s developery na sériových i zakázkových interiérech — od hrubé stavby po finální povrchy.</p>
+        </div>
+      </div>
+
+      <div class="services-professions reveal">
+        <span class="services-professions-label" data-i18n="services.professionsLabel">Koordinujeme všechny profese</span>
+        <div class="services-professions-tags">
+          <span class="profession-tag">SDK příčky</span>
+          <span class="profession-tag">Elektroinstalace</span>
+          <span class="profession-tag">VZT</span>
+          <span class="profession-tag">ZTI</span>
+          <span class="profession-tag">Podlahy</span>
+          <span class="profession-tag">Stropní podhledy</span>
+          <span class="profession-tag">Malířské práce</span>
+          <span class="profession-tag">Bourací práce</span>
+          <span class="profession-tag">Zámečnické práce</span>
+          <span class="profession-tag">Zakázkový nábytek</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       PROCESS
+       ===================================================== -->
+  <section class="process" id="process">
+    <div class="container">
+      <p class="eyebrow reveal" data-i18n="process.eyebrow">Jak pracujeme</p>
+      <h2 class="section-heading reveal" data-i18n-html="process.heading">Od prvního hovoru<br>k <em>předání klíčů</em>.</h2>
+      <p class="section-lead reveal" data-i18n="process.lead">Průhledný, předvídatelný proces se čtyřmi jasnými milníky. U každého víte, co se děje a kdy očekávat další krok.</p>
+
+      <div class="process-timeline">
+        <div class="process-step reveal">
+          <div class="process-marker">
+            <span class="process-number">01</span>
+            <svg class="process-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h4 data-i18n="process.s1Title">Konzultace</h4>
+          <p data-i18n="process.s1Desc">Osobní schůzka. Projdeme rozsah, termín, rozpočet. Řekneme rovnou, jestli na to máme kapacitu.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-1">
+          <div class="process-marker">
+            <span class="process-number">02</span>
+            <svg class="process-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
+          </div>
+          <h4 data-i18n="process.s2Title">Projekt</h4>
+          <p data-i18n="process.s2Desc">Projektová dokumentace, rozpočet, harmonogram. Pevná nabídka, žádné skryté náklady.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-2">
+          <div class="process-marker">
+            <span class="process-number">03</span>
+            <svg class="process-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15.12 2.12a3 3 0 0 1 4.24 0l2.52 2.52a3 3 0 0 1 0 4.24L8.76 22H2v-6.76z"/><path d="M2 22h6.76"/></svg>
+          </div>
+          <h4 data-i18n="process.s3Title">Realizace</h4>
+          <p data-i18n="process.s3Desc">Kompletní stavebně-řemeslné práce. Týdenní reporting, fotodokumentace, přímý kontakt.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-3">
+          <div class="process-marker">
+            <span class="process-number">04</span>
+            <svg class="process-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m21 2-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.78 7.78 5.5 5.5 0 0 1 7.78-7.78m0 0L12 10l3.5-3.5L19 2l2 2-4.5 4.5L13 12l.39-.39z"/></svg>
+          </div>
+          <h4 data-i18n="process.s4Title">Předání</h4>
+          <p data-i18n="process.s4Desc">Kontrola kvality, předávací protokol, dokumentace skutečného provedení, záruka.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       CLIENTS
+       ===================================================== -->
+  <section class="clients" id="clients">
+    <div class="container">
+      <div class="clients-header">
+        <div class="reveal">
+          <p class="eyebrow" data-i18n="clients.eyebrow">Reference</p>
+          <h2 class="section-heading" data-i18n-html="clients.heading">Značky, které<br>nám <em>důvěřují</em>.</h2>
+        </div>
+        <p class="lead-text reveal reveal-delay-1" data-i18n="clients.lead">
+          Výběr z 80+ projektů pro české i mezinárodní značky. Reference s fotografiemi dokončených staveb doplníme postupně — pokud chcete vidět konkrétní případ, napište nám.
+        </p>
+      </div>
+
+      <div class="clients-grid">
+        <div class="client-cell reveal" id="client-1" title="Swarovski"><img src="img/clients/01.png" alt="Swarovski" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-2" title="Hervis Sports"><img src="img/clients/02.png" alt="Hervis Sports" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-3" title="Intersport"><img src="img/clients/03.png" alt="Intersport" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-4" title="C&amp;A"><img src="img/clients/04.png" alt="C&amp;A" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-5" title="Hamleys"><img src="img/clients/05.png" alt="Hamleys" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-6" title="Lagardère / Paul"><img src="img/clients/06.png" alt="Lagardère / Paul" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-7" title="Immofinanz"><img src="img/clients/07.png" alt="Immofinanz" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-8" title="CPI Property Group"><img src="img/clients/08.png" alt="CPI Property Group" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-9" title="Technopark"><img src="img/clients/09.png" alt="Technopark" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-10" title="Forum Liberec"><img src="img/clients/10.png" alt="Forum Liberec" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-11" title="Centrum Pivovar Děčín"><img src="img/clients/11.png" alt="Centrum Pivovar Děčín" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-12" title="Central Most"><img src="img/clients/12.png" alt="Central Most" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-13" title="ES.TE Design &amp; Consulting"><img src="img/clients/13.png" alt="ES.TE Design &amp; Consulting" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-14" title="Gemini Oční klinika"><img src="img/clients/14.png" alt="Gemini Oční klinika" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-15" title="TIPOX"><img src="img/clients/15.png" alt="TIPOX" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-16" title="EXCIPIA"><img src="img/clients/16.png" alt="EXCIPIA" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-17" title="DEHOTEL"><img src="img/clients/17.png" alt="DEHOTEL" loading="lazy"></div>
+        <div class="client-cell reveal" id="client-18" title="UMBER &amp; CO."><img src="img/clients/18.png" alt="UMBER &amp; CO." loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       CONTACT
+       ===================================================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-header reveal">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Kontakt</p>
+        <h2 class="section-heading" data-i18n-html="contact.heading">Spojte se <em>s námi</em>.</h2>
+        <p class="contact-lead" data-i18n="contact.lead">Každý projekt začíná dobrým rozhovorem. Zavolejte nám, napište e-mail, nebo si s námi domluvte osobní schůzku. Jsme v tom s vámi.</p>
+      </div>
+
+      <div class="contact-cards reveal reveal-delay-1">
+        <!-- Phone card -->
+        <button type="button" class="contact-card copyable" data-copy-type="phone" data-copy-value="+420 739 316 574" data-href="tel:+420739316574">
+          <svg class="contact-card-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 3h3l1.5 4-2 1a10 10 0 0 0 5 5l1-2 4 1.5V16a1 1 0 0 1-1 1A14 14 0 0 1 3 4a1 1 0 0 1 1-1z"/></svg>
+          <span class="contact-card-label" data-i18n="contact.phone">Telefon</span>
+          <span class="contact-card-value">+420 739 316 574</span>
+          <span class="contact-card-name">Vladimír Raš</span>
+          <span class="contact-card-hint" data-i18n="contact.phoneHint">Pro rychlé dotazy a konzultace</span>
+        </button>
+
+        <!-- Email card -->
+        <button type="button" class="contact-card copyable" data-copy-type="email" data-email-user="info" data-email-domain="rascon.cz">
+          <svg class="contact-card-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="16" height="12" rx="1"/><path d="M2 5l8 7 8-7"/></svg>
+          <span class="contact-card-label" data-i18n="contact.email">Email</span>
+          <span class="contact-card-value" data-email-display>&nbsp;</span>
+          <span class="contact-card-hint" data-i18n="contact.emailHint">Pro zasílání podkladů a poptávek</span>
+        </button>
+
+        <!-- Location card -->
+        <div class="contact-card contact-card-static">
+          <svg class="contact-card-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 1C6.13 1 3 4.13 3 8c0 5.25 7 11 7 11s7-5.75 7-11c0-3.87-3.13-7-7-7z"/><circle cx="10" cy="8" r="2.5"/></svg>
+          <span class="contact-card-label" data-i18n="contact.location">Lokalita</span>
+          <span class="contact-card-value" data-i18n="contact.locationValue">Praha 9 — Letňany</span>
+          <span class="contact-card-hint" data-i18n="contact.locationHint">Odpovídáme do 24 hodin</span>
+        </div>
+      </div>
+
+      <!-- Social strip -->
+      <div class="contact-social-strip reveal reveal-delay-2">
+        <span class="contact-social-label" data-i18n="contact.social">Sledujte nás</span>
+        <div class="contact-social">
+          <a href="https://www.facebook.com/profile.php?id=61579614524490" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/rascon-construction/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.3 18.3v-8H5.7v8h2.6zM7 9.2a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm11.3 9.1v-4.4c0-2.3-1.2-3.4-2.9-3.4-1.3 0-1.9.7-2.3 1.2v-1h-2.6c0 .7 0 8 0 8h2.6v-4.5c0-.2 0-.5.1-.6.2-.4.6-.9 1.3-.9.9 0 1.3.7 1.3 1.7v4.3h2.5z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/rascon_construction/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.46.66.26 1.22.6 1.77 1.16.56.56.9 1.11 1.16 1.77.24.63.41 1.36.46 2.42C21.99 8.94 22 9.28 22 12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.46 2.42a4.9 4.9 0 0 1-1.16 1.77c-.56.56-1.11.9-1.77 1.16-.63.24-1.36.41-2.42.46-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.42-.46a4.9 4.9 0 0 1-1.77-1.16 4.9 4.9 0 0 1-1.16-1.77c-.24-.63-.41-1.36-.46-2.42C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.46-2.42.26-.66.6-1.22 1.16-1.77.56-.56 1.11-.9 1.77-1.16.63-.24 1.36-.41 2.42-.46C8.94 2.01 9.28 2 12 2zm0 1.8c-2.67 0-2.99.01-4.04.06-.98.04-1.5.21-1.86.34-.47.18-.8.4-1.15.75-.35.35-.57.68-.75 1.15-.13.36-.3.88-.34 1.86C3.81 9.01 3.8 9.33 3.8 12s.01 2.99.06 4.04c.04.98.21 1.5.34 1.86.18.47.4.8.75 1.15.35.35.68.57 1.15.75.36.13.88.3 1.86.34 1.05.05 1.37.06 4.04.06s2.99-.01 4.04-.06c.98-.04 1.5-.21 1.86-.34.47-.18.8-.4 1.15-.75.35-.35.57-.68.75-1.15.13-.36.3-.88.34-1.86.05-1.05.06-1.37.06-4.04s-.01-2.99-.06-4.04c-.04-.98-.21-1.5-.34-1.86a3.1 3.1 0 0 0-.75-1.15 3.1 3.1 0 0 0-1.15-.75c-.36-.13-.88-.3-1.86-.34C14.99 3.81 14.67 3.8 12 3.8zm0 3.06a5.14 5.14 0 1 1 0 10.28 5.14 5.14 0 0 1 0-10.28zm0 8.47a3.33 3.33 0 1 0 0-6.66 3.33 3.33 0 0 0 0 6.66zm6.54-8.68a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Copy feedback toast -->
+  <div class="copy-toast" id="copy-toast" role="status" aria-live="polite">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l3 3 7-7"/></svg>
+    <span data-i18n="toast.copied">Zkopírováno</span>
+  </div>
+
+  </main>
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand-block">
+        <p data-i18n="footer.tagline">Realizujeme projekty pro retail, kanceláře a rezidence v České republice, na Slovensku a v Maďarsku.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5 data-i18n="footer.services">Co děláme</h5>
+        <a href="#services" data-i18n="hero.cat1">Retail</a>
+        <a href="#services" data-i18n="services.s3Title">Kanceláře</a>
+        <a href="#services" data-i18n="hero.cat3">Rezidence</a>
+      </div>
+
+      <div class="footer-col">
+        <h5 data-i18n="footer.company">Společnost</h5>
+        <a href="#about" data-i18n="nav.about">O nás</a>
+        <a href="#process" data-i18n="nav.process">Proces</a>
+        <a href="#clients" data-i18n="nav.clients">Reference</a>
+        <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+      </div>
+
+      <div class="footer-col">
+        <h5 data-i18n="footer.contactCol">Kontakt</h5>
+        <a href="tel:+420739316574">+420 739 316 574</a>
+        <a href="#" class="footer-email" data-email-user="info" data-email-domain="rascon.cz"><span data-email-display>&nbsp;</span></a>
+      </div>
+
+      <div class="footer-col">
+        <h5 data-i18n="footer.billing">Fakturační údaje</h5>
+        <p>Rascon construction s.r.o.</p>
+        <p>Hlučkova 813/12<br>199 00 Praha 9 — Letňany</p>
+        <p style="font-family: var(--font-mono); font-size: 0.72rem;">IČO 14280299<br>DIČ CZ14280299</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Rascon construction s.r.o.</p>
+      <p data-i18n="footer.rights">Všechna práva vyhrazena.</p>
+    </div>
+  </footer>
+  <button type="button" class="cookie-fab" id="cookie-fab" aria-label="Cookies">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 12c0 5.25-4.25 9.5-9.5 9.5S2.5 17.25 2.5 12 6.75 2.5 12 2.5c.5 0 1 .04 1.5.12-.5 1.5.2 3.2 1.8 3.6.5 1.7 2.2 2.5 3.6 1.8 1 1.3 1.8 2.6 2.4 4"/><circle cx="8" cy="9" r="1"/><circle cx="15" cy="15" r="1.2"/><circle cx="9" cy="16" r="0.8"/><circle cx="17" cy="9" r="0.8"/><circle cx="12" cy="12" r="0.8"/></svg>
+  </button>
+  <div class="cookie-overlay" id="cookie-overlay" role="dialog" aria-modal="true">
+    <div class="cookie-modal">
+      <span class="cookie-modal-eyebrow" data-i18n="cookies.eyebrow">Soukromí</span>
+      <h4 data-i18n="cookies.title">Cookies</h4>
+      <p data-i18n="cookies.body">Tento web používá pouze nezbytné soubory cookie, které zajišťují jeho základní fungování. Neshromažďujeme žádná analytická ani marketingová data.</p>
+      <button type="button" class="cookie-close" id="cookie-close" data-i18n="cookies.ack">Beru na vědomí</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
