@@ -69,8 +69,8 @@
         'contact.phoneHint': 'Pro rychlé dotazy a konzultace',
         'contact.emailHint': 'Pro zasílání podkladů a poptávek',
         'contact.location': 'Lokalita',
-        'contact.locationValue': 'Praha 9 — Letňany',
-        'contact.locationHint': 'Odpovídáme do 24 hodin',
+        'contact.locationValue': 'Praha / ČR',
+        'contact.locationHint': 'sejdeme se s vámi po celé ČR',
         'contact.social': 'Sledujte nás',
 
         'toast.copied': 'Zkopírováno',
@@ -163,8 +163,8 @@
         'contact.phoneHint': 'For quick questions and consultations',
         'contact.emailHint': 'For sending documents and enquiries',
         'contact.location': 'Location',
-        'contact.locationValue': 'Prague 9 — Letňany',
-        'contact.locationHint': 'We reply within 24 hours',
+        'contact.locationValue': 'Prague / CZ',
+        'contact.locationHint': 'we meet you anywhere in the Czech Republic',
         'contact.social': 'Follow us',
 
         'toast.copied': 'Copied',
