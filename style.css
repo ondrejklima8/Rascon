@@ -972,6 +972,8 @@
       opacity: 1;
       transform: scale(1.04);
     }
+    #client-8 img,
+    #client-11 img { max-height: 95px; }
 
     /* ===========================================================
        CAREER
